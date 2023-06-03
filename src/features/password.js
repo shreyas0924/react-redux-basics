@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initailPassword = { password: '' }
-const userSlice2 = createSlice({
+const passwordSlice = createSlice({
   name: 'user1',
   initialState: { value: initailPassword },
   reducers: {
@@ -13,5 +13,5 @@ const userSlice2 = createSlice({
     },
   },
 })
-export const { setPassword, reset } = userSlice2.actions
-export default userSlice2.reducer
+export const { setPassword, reset } = passwordSlice.actions
+export default passwordSlice.reducer
